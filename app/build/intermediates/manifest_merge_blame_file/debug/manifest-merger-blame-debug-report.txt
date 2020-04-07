@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.nfscards"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.NFC" />
+11-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:5:5-62
+11-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:5:22-59
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:7:5-76
+12-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.FEATURE_NFC_HOST_CARD_EMULATION" />
+13-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:8:5-90
+13-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:8:22-87
+14
+15    <uses-feature android:name="android.hardware.nfc" />
+15-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:10:5-57
+15-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:10:19-54
+16    <uses-feature android:name="android.hardware.bluetooth" />
+16-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:11:5-63
+16-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:11:19-60
+17
+18    <application
+18-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:13:5-53:19
+19        android:allowBackup="true"
+19-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:14:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.0.1] C:\Users\hanna\.gradle\caches\transforms-2\files-2.1\aa782ce88e4a65071c9b22f6f1fd262a\core-1.0.1\AndroidManifest.xml:22:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:15:9-43
+23        android:label="@string/app_name"
+23-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:16:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:17:9-54
+25        android:supportsRtl="true"
+25-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:18:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:19:9-40
+28        <activity android:name="com.example.nfscards.MainActivity" >
+28-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:20:9-41:20
+28-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:20:19-47
+29            <intent-filter>
+29-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:21:13-25:29
+30                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+30-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:22:17-77
+30-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:22:25-74
+31
+32                <category android:name="android.intent.category.DEFAULT" />
+32-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:17-76
+32-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:27-73
+33            </intent-filter>
+34            <intent-filter>
+34-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:26:13-30:29
+35                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+35-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:27:17-77
+35-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:27:25-74
+36
+37                <category android:name="android.intent.category.DEFAULT" />
+37-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:17-76
+37-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:27-73
+38            </intent-filter>
+39            <intent-filter>
+39-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:31:13-35:29
+40                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+40-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:32:17-76
+40-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:32:25-73
+41
+42                <category android:name="android.intent.category.DEFAULT" />
+42-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:17-76
+42-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:24:27-73
+43            </intent-filter>
+44            <intent-filter>
+44-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:36:13-40:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:37:17-69
+45-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:37:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:39:17-77
+47-->D:\AndroidStudioProjects\Новая папка\NFSCards\app\src\main\AndroidManifest.xml:39:27-74
+48            </intent-filter>
+49        </activity>
+50        <!-- <activity android:name=".Main2Activity"> -->
+51
+52
+53        <!-- </activity> -->
+54        <!-- <service android:name=".MyHostApduService" android:exported="true" -->
+55        <!-- android:permission="android.permission.BIND_NFC_SERVICE"> -->
+56        <!-- <intent-filter> -->
+57        <!-- <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/> -->
+58        <!-- </intent-filter> -->
+59        <!-- <meta-data android:name="android.nfc.cardemulation.host_apdu_service" -->
+60        <!-- android:resource="@xml/apduservice"/> -->
+61        <!-- </service> -->
+62    </application>
+63
+64</manifest>
