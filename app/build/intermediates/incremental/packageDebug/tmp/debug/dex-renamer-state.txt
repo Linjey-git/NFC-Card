@@ -1,4 +1,4 @@
-#Tue Apr 07 13:09:02 EEST 2020
-base.0=D\:\\AndroidStudioProjects\\Новая папка\\NFSCards\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+#Mon Apr 13 18:55:12 EEST 2020
+base.0=/home/fo4ik/StudioProjects/NFC-Card/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
